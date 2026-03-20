@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skay Quiz - Noregresso Miguel & Roxas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="header">
+            <span class="badge-dev">⚡ By Noregresso Miguel & Roxas</span>
+            <h1>Skay Quiz</h1>
+            <p class="subtitle">Prouve que tu es le meilleur !</p>
+        </div>
+
+        <div class="stats-card">
+            <div class="stat-item">
+                <span class="icon">🚩</span>
+                <b id="stat-level">1</b>
+                <p>Niveau actuel</p>
+            </div>
+            <div class="stat-item">
+                <span class="icon">⭐</span>
+                <b id="best-level">1</b>
+                <p>Meilleur niveau</p>
+            </div>
+            <div class="stat-item">
+                <span class="icon">🎗️</span>
+                <b id="progression">0%</b>
+                <p>Progression</p>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-text" id="progress-text">0 / 500 niveaux complétés</div>
+                <div class="progress-bg"><div class="progress-fill" id="progress-fill" style="width: 0.2%;"></div></div>
+            </div>
+        </div>
+
+        <button class="play-btn" onclick="startCurrentLevel()">
+            <span>▶</span> Jouer – Niveau <span id="btn-lvl-num">1</span>
+        </button>
+
+        <div class="levels-section">
+            <h3>NIVEAUX</h3>
+            <div class="levels-grid" id="levels-grid">
+                </div>
+        </div>
+    </div>
+
+    <div id="quiz-overlay" class="hidden">
+        <div class="quiz-card">
+            <div id="quiz-header">
+                <span id="quiz-level-title">Niveau 1</span>
+                <span id="quiz-step-count">Question 1 / 5</span>
+            </div>
+            <h2 id="q-text">Chargement...</h2>
+            <div id="options">
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
